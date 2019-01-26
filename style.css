@@ -1,161 +1,128 @@
-header h1 {
-	color: #4a83cf;
-	font-size: 60px;
-	letter-spacing: 2px;
-	font-family: 'Georgia'
+nav {
+	width: 90%;
+	height: 70px;
+}
+
+header {
+	background-color: #3ca98b;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: 100;
+}
+
+* {
+	padding: 0;
+	margin: 0;
 }
 
 body {
-	margin-left: 0;
-	margin-right: 0;
-	font-family: 'Helvetica';
+	font-family: 'Lato', sans-serif;
 }
 
-#cover-image {
-	background-image: url("img/windfarm-ori copy.jpg");
-	max-width: 100%;
-	height: 600px;
-	text-align: center;
-}
-
-.center-container {
-	position: relative;
-	top: 200px;
-	height: 50px;
-	margin: 0 auto;
-	max-width: 700px;
-}
-
-.button {
-	background-color: #143989;
+nav a {
+	text-decoration-line: none;
 	color: white;
 	font-size: 1em;
-	height: 80%;
-	margin: 0;
-	min-width: 70px;
-	width: 100px;
-	font-family: 'Helvetica';
-	border-radius: 5px;
-	transition: 0.15s;
 }
 
-.button:hover {
-	background-color: #bdc4fc;
-	color: #143989;
+nav a:hover {
 }
 
-.button:active {
-	transform: translateY(1px);
+#logo-container {
+	margin-top: 3px;
+	text-align: center;
+	float: left;
+	max-width: 230px;
+	min-width: 230px;
 }
 
-#home-search {
-	font-style: italic;
-	font-size: 1em;
-	height: 60%;
-	min-width: 200px;
-	width: 80%;
-	color: #143989;
-	border-radius: 5px;
-	padding-left: 5px;
+#logo-container h1 {
+	font-size: 1.5em;
+	font-family: 'Merriweather';
 }
 
-.section-container {
-	margin-top: 30px;
-	padding: 0 10px;
-}
-
-.section-container > h2 {
-	color: #143989;
-	font-size: 2em;
-}
-
-.news-panel {
-	display: flex;
-	margin-bottom: 30px;
-	height: 100px;
-}
-
-.news-icon{
-	width: 160px;
-}
-
-.news-text h3
-{
-	margin-top: 0;
-	color: #143989;
-}
-
-.news-text {
-	margin-left: 20px;
-	padding: 0;
-	font-size: 14px;
-}
-
-.link-selanjutnya {
-	font-style: italic;
+#logo-container h2 {
 	font-size: 12px;
-	color: gray;
-	text-decoration: underline;
-}
-
-#products {
-	margin-top: 50px;
-	padding-top: 10px;
-	background-color: #4a83cf;
-	min-height: 600px;
-}
-
-#product-title-container {
 	font-weight: lighter;
-	font-size: 3em;
+	font-family: sans-serif;
+}
+
+#logo-container p {
+	font-size: 14px;
+	font-family: Helvetica;
+	letter-spacing: 2px;
+}
+
+#tab-container {
+	position: relative;
+	left: 20px;
+	display: flex;
+	height: 100%;
+	padding-top: 20px;
+	font-size: 1.1em;
+}
+
+#tab-container a {
+	text-align: center;
+	min-width: 100px;
+	width: 16.67%;
+}
+
+#jumbotron {
+	background-image: url('./img/rumah-1.png');
+	background-size: cover;
+	height: 600px;
 	color: white;
-	margin: 55px auto 0 auto;
-	text-align: center;
+	font-weight: bold;
+	margin-top: 70px;
 }
 
-.product-icon-container {
-	display: flex;
-}
-
-
-
-.product-link {
-	background-color: white;
-	width: 33.3%;
-	border-radius: 20px;
-	margin: 0 20px;
-	height: 230px;
-	padding: 20px 0 10px 0;
-	text-align: center;
-	vertical-align: center;
-	display: flex;
-	font-size: 24px;
-	text-decoration: none;
-	text-transform: capitalize;
-	color: #143989;
-	transition: 0.25s;
-}
-
-.product-item {
-	display: flex;
-	margin: 0 auto;
-	flex-direction: column;
-	padding-top: 25px;
-}
-
-.product-link:hover {
-	background-color: #d3daff;
-	transform: translateY(2px);
-}
-
-.product-item > p {
-	margin-top: 30px;
-	margin-bottom: 0;
-}
-
-.product-img {
-	min-width: 30px;
-	height: 120px;
+#jumbotron:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 600px;
+	margin-top: 70px;
+	background-color: rgba(60,169,139,0.7);
 	width: 100%;
-	margin: 0 auto;
+	z-index: 1;
+
+}
+
+.jumbotron-text {
+	z-index: 2;
+	position: relative;
+	top: 20%;
+	left: 10%;
+	height: 100%;
+	width: 100%;
+	font-family: 'Merriweather';
+}
+
+.jumbotron-text h1 {
+	font-size: 4em;
+	font-weight: 900;
+}
+
+.jumbotron-text h2 {
+	font-size: 3em;
+	font-weight: 900;
+}
+
+.jumbotron-text h3 {
+	font-size: 2em;
+	font-weight: 900;
+}
+
+#papamama {
+	font-size: 3em;
+    color: rgb(29, 146, 99);
+    letter-spacing: 3px;
+    font-weight: 900;
+    background-color: white;
+    padding: 0 9px;
+    text-transform: uppercase;
 }
