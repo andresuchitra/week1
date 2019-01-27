@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+	
+	#jumbotron-text > h1 {
+		font-size: 2em;
+	}
+
+	#jumbotron-text > h3 {
+		font-size: 1em;
+	}
+
+	#papamama {
+		font-size: 2em;
+	}
+}

@@ -1,5 +1,5 @@
 nav {
-	width: 90%;
+	width: 100%;
 	height: 70px;
 }
 
@@ -24,10 +24,11 @@ body {
 nav a {
 	text-decoration-line: none;
 	color: white;
-	font-size: 1em;
 }
 
-nav a:hover {
+#tab-container a:hover {
+	background-color: white;
+	color: #3ca98b;
 }
 
 #logo-container {
@@ -59,15 +60,14 @@ nav a:hover {
 	position: relative;
 	left: 20px;
 	display: flex;
-	height: 100%;
-	padding-top: 20px;
-	font-size: 1.1em;
+	height: 70px;
+	font-size: 18px;
 }
 
 #tab-container a {
 	text-align: center;
-	min-width: 100px;
-	width: 16.67%;
+	min-width: 90px;
+	padding: 18px 5px;
 }
 
 #jumbotron {
@@ -95,34 +95,71 @@ nav a:hover {
 .jumbotron-text {
 	z-index: 2;
 	position: relative;
-	top: 20%;
-	left: 10%;
+	top: 10%;
+	left: 5%;
 	height: 100%;
 	width: 100%;
-	font-family: 'Merriweather';
+	font-family: Helvectica;
 }
 
 .jumbotron-text h1 {
 	font-size: 4em;
+	font-family: 'Merriweather';
 	font-weight: 900;
-}
-
-.jumbotron-text h2 {
-	font-size: 3em;
-	font-weight: 900;
+	color: yellow;
 }
 
 .jumbotron-text h3 {
 	font-size: 2em;
-	font-weight: 900;
+	font-weight: 200;
 }
 
 #papamama {
 	font-size: 3em;
-    color: rgb(29, 146, 99);
-    letter-spacing: 3px;
-    font-weight: 900;
-    background-color: white;
-    padding: 0 9px;
-    text-transform: uppercase;
+	color: white;
+	font-family: 'Merriweather';
+    /*color: rgb(29, 146, 99); */
+    font-weight: 400;
+}
+
+.section-wrapper {
+	padding: 20px 10px;
+}
+
+.section-wrapper h1 {
+	font-size: 1.6em;
+}
+
+.section-title {
+	color: #3ca98b;
+	margin-bottom: 20px;
+}
+.section-title-white {
+	color: white;
+}
+
+#tenaga-pengajar {
+	color: rgb(255,255,255);
+	min-height: 400px;
+	background-color: #3ca98b;
+}
+
+.profil-description {
+	margin: 10px 0;
+}
+
+/** MEDIA QUERIES  - ALWAYS ON THE LAST PART OF THIS FILE **/
+
+@media only screen and (max-width: 600px) {
+	.jumbotron-text  h1 {
+		font-size: 3em;
+	}
+
+	.jumbotron-text  h3 {
+		font-size: 1.5em;
+	}
+
+	#papamama {
+		font-size: 2em;
+	}
 }
