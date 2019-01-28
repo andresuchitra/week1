@@ -14,7 +14,7 @@ html,body
 
 nav {
 	width: 100%;
-	height: 70px;
+	height: auto;
 	background-color: #3ca98b;
 	top: 0;
 	position: fixed;
@@ -31,35 +31,45 @@ nav a {
 	color: white;
 }
 
-#logo-container {
-	margin-top: 3px;
+.logo-container {
+	margin: 3px 30px 6px 20px;
 	text-align: center;
 	float: left;
 	max-width: 230px;
-	min-width: 230px;
 }
 
-#logo-container h1 {
-	font-size: 1.5em;
+.logo-container h1 {
+	font-size: 1.4em;
 	font-family: 'Merriweather';
 }
 
-#logo-container h2 {
+.logo-container h2 {
 	font-size: 12px;
-	font-weight: lighter;
 	font-family: sans-serif;
 }
 
-#logo-container p {
-	font-size: 14px;
+.logo-container p {
+	font-size: 16px;
 	font-family: Helvetica;
 	letter-spacing: 2px;
 }
 
-
-.naVmenu {
+.navMenu {
 	display: flex;
-	width: 100%;
+    background-color: #3ca98b;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.navMenu a {
+	text-align: center;
+	min-width: 90px;
+	padding: 24px 12px;
+}
+
+.navMenu a:hover {
+	background-color: white;
+	color: #3ca98b;
 }
 
 .menu-icon-container {
@@ -68,35 +78,16 @@ nav a {
 	min-height: inherit;
 	min-width: 50px;
 	top: 10px;
-	padding: 10px 0;
+	padding: 13px 0;
 	text-align: center;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
+  width: 1.9em;
+  height: 4px;
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
-}
-
-#tab-container {
-	min-height: 70px;
-	font-size: 18px;
-	background-color: #3ca98b;
-	z-index: 3;
-}
-
-
-#tab-container a {
-	text-align: center;
-	min-width: 90px;
-	padding: 18px 5px;
-}
-
-#tab-container a:hover {
-	background-color: white;
-	color: #3ca98b;
 }
 
 #jumbotron {
@@ -156,7 +147,7 @@ nav a {
 }
 
 .section-wrapper {
-	padding: 30px 20px 30px 50px;
+	padding: 30px 20px 30px 40px;
 }
 
 .section-wrapper h1 {
@@ -238,6 +229,7 @@ nav a {
 
 .kontak-wrapper-item > iframe {
 	margin-left: 50px;
+	min-width: 320p;
 }
 
 .telepon {
@@ -274,7 +266,7 @@ nav a {
 
 @media only screen and (max-width: 600px) {
 	.jumbotron-text  h1 {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	.jumbotron-text  h3 {
@@ -282,7 +274,7 @@ nav a {
 	}
 
 	#papamama {
-		font-size: 2.6em;
+		font-size: 2.3em;
 	}
 
 	.menu-icon-container {
@@ -296,12 +288,14 @@ nav a {
 	.navMenu {
 		display: none;
 		width: 100%;
+		font-size: 14px;
 	}
 
 	.navMenu.responsive {
 		position: relative;
 		display: inline-block;
 		width: 100%;
+		margin: 0 0;
 	}
 
 	.navMenu a {
@@ -312,12 +306,61 @@ nav a {
 		top: 10px;
 		right: 10px;
 	}
+
+	.section-wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.program-item h2 {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 750px)
+{
+	.kontak-wrapper {
+		flex-direction: column;
+	}
+
+	.kontak-wrapper-item > iframe {
+    	margin-left: 0;
+    	margin-top: 40px;
+    	width: -webkit-fill-available;
+	}
 }
 
 @media only screen and (min-width: 600px)
 {
 	.profil-description {
 		max-width: 700px;
+	}
+
+}
+
+@media only screen and (max-width: 455px)
+{
+	.logo-container {
+		margin: 9px 30px 9px 10px;
+		text-align: center;
+		float: left;
+		max-width: 230px;
+	}
+
+	.logo-container h1 {
+		font-size: 1.2em;
+		font-family: 'Merriweather';
+	}
+
+	.logo-container h2 {
+		font-size: 12px;
+		font-family: sans-serif;
+	}
+
+	.logo-container p {
+		font-size: 13px;
+		font-family: Helvetica;
+		letter-spacing: 2px;
 	}
 
 }
