@@ -289,9 +289,9 @@ nav a {
 
 	.menu-icon-container {
 		display: inline-block;
-		right: 0;
-		top: 0;
+		right: 30px;
 		position: absolute;
+		top: 0;
 	}
 
 	.navMenu {
