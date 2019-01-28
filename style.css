@@ -104,6 +104,7 @@ nav a {
 	color: white;
 	font-weight: bold;
 	position: relative;
+	padding-top: 70px;
 	background-color: rgba(60,169,139,0.85);
 }
 
